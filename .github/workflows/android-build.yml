@@ -46,8 +46,7 @@ jobs:
       run: |
         echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" >> $GITHUB_ENV
         echo "ANDROID_NDK_HOME=$ANDROID_NDK_HOME" >> $GITHUB_ENV
-        buildozer init
-        buildozer android deploy
+        echo "Buildozer spec already exists, skipping init"
     
     - name: Build APK
       run: |
