@@ -1,0 +1,59 @@
+
+MANUAL APK BUILD INSTRUCTIONS:
+
+METHOD 1: UBUNTU/LINUX
+----------------------------
+1. Install Ubuntu (dual boot or VM)
+2. Open terminal
+3. Run these commands:
+
+sudo apt update
+sudo apt install -y build-essential git python3-pip
+sudo apt install -y libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev
+sudo apt install -y libsdl2-ttf-dev libportmidi-dev
+sudo apt install -y default-jdk autoconf libtool pkg-config
+
+4. Install buildozer:
+pip install buildozer
+
+5. Build APK:
+buildozer android debug
+
+METHOD 2: REPLIT.COM
+----------------------------
+1. Go to https://replit.com
+2. Create new Python repl
+3. Upload your files:
+   - main.py
+   - buildozer.spec
+4. In shell, run:
+pip install buildozer
+buildozer android debug
+
+METHOD 3: PYTHONANYWHERE
+----------------------------
+1. Create free account
+2. Upload files
+3. Install buildozer
+4. Build APK
+
+ESTIMATED TIME:
+- Setup: 30-60 minutes
+- Build time: 10-20 minutes
+- Total: 1-2 hours
+
+FILES NEEDED:
+- main.py (your app)
+- buildozer.spec (configuration)
+- requirements.txt (dependencies)
+
+TROUBLESHOOTING:
+- If build fails, check buildozer.log
+- Make sure Android SDK is installed
+- Check internet connection
+- Try debug mode first
+
+SUCCESS INDICATORS:
+- APK file created in bin/ directory
+- File size: 10-50 MB
+- Can be installed on Android
